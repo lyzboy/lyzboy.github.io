@@ -1,0 +1,284 @@
+/* 
+    Attributes:
+    hero photo: Photo by Tom Barrett on Unsplash
+  
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:wght@100;400;700&family=Kanit:wght@100;400;700&family=Merriweather:ital@0;1&family=Poppins:wght@100;400;700&family=Work+Sans:wght@400;500;800&display=swap');
+
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+main {
+    position: relative;
+    top: 75px;
+    padding: 0 15%;
+}
+
+main:not(:last-child){
+    border-bottom: 1px solid black;
+}
+footer {
+    position: relative;
+    top: 75px;
+    padding: 0 15%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 75px 2fr;
+    margin-top: 50px;
+    padding-bottom: 50px;
+   
+}
+
+.container:not(:nth-last-of-type(1)){ 
+    border-bottom: 1px solid black;
+}
+
+.element-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.shadow {
+    box-shadow: 5px 5px 10px hsl(0, 0%, 40%);
+}
+
+
+.default-container {
+    padding-bottom: 50px;
+}
+
+/* Header styles */
+
+nav {
+    width: 100%;
+    background-color: hsl(0, 0%, 75%);
+    margin-bottom: 25px;
+    box-shadow: 0 5px 5px hsl(0, 0%, 40%);
+    position: fixed;
+    z-index: 10;
+}
+
+nav ul {
+    margin: 0 auto;
+    height: 50px;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    height: 100%;
+    position: relative;
+    top: 17px;
+}
+
+nav li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+nav li a:active {
+    color: hsl(0, 0%, 53%);    
+}
+
+header {
+    width: 100%;
+    padding-bottom: 50px;
+    border-bottom: solid 1px black;
+}
+
+.header-cell {
+    width: 50%;
+}
+
+.header-element {
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header table {
+    height: 100%;
+}
+
+.header-title { 
+    background:linear-gradient(hsla(219, 97%, 58%, 0.8), hsla(46, 74%, 52%, 0.8) ), url('../images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 25px;
+    color: white;
+}
+
+
+
+/* Color styles */
+
+.color h2 {
+    text-transform: uppercase;
+}
+
+.color-element {
+    min-width: 200px;
+    padding: 15px;
+    width: 40%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.color-primary {
+    background-color: #007BFF;
+}
+.color-secondary {
+    background-color: #FFD700;
+}
+.color-accent {
+    background-color: #FF4500;
+}
+.color-black {
+    background-color: #CCCCCC;
+}
+.color-white {
+    background-color: #FFFFFF;
+}
+
+/* Fonts */
+
+.font {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+.font-container{
+    padding-bottom: 25px;
+    flex-grow: 1;
+}
+
+.font1{
+    font-family: 'Bitter', serif;
+}
+.font2{
+    font-family: 'Kanit', sans-serif;
+}
+.font3{
+    font-family: 'Poppins', serif;
+}
+
+.font-light {
+    font-weight: 100;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+/* Text Styles */
+#heading{
+    font-family: Kanit, sans-serif;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+#subheading{
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+#paragraph{
+    font-family: Bitter, serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+
+/* Buttons */
+.button {
+    font-family: Poppins, sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: Black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #007BFF;
+    cursor: pointer;
+    user-select: none; 
+    -moz-user-select: none; 
+    -webkit-text-select: none;
+    -webkit-user-select: none; 
+}
+
+.btn-flat {
+    border: 1px solid #007BFF;
+    background-color: white;
+}
+
+.btn-flat:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.btn-flat:active {
+    background-color: #CCCCCC;
+    color: #fff;
+}
+
+.btn-3d {
+    color: #ffffff;
+    box-shadow: inset 0 2px 2px hsl(0, 0%, 100%), inset 0 -2px 4px hsl(0, 0%, 100%), 0 4px 2px hsl(0, 0%, 40%);
+}
+
+.btn-3d:hover {
+    background-color: #006cdf;
+}
+
+.btn-3d:active {
+    margin-top: 4px;
+    box-shadow: inset 0 2px 2px hsl(0, 0%, 0%), inset 0 -2px 4px hsl(0, 0%, 0%), 0 0;
+}
+
+.default-container h3 {
+    margin-bottom: 10px;
+}
+
