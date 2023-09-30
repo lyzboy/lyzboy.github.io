@@ -1,0 +1,162 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.heading {
+  background-color: black;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.heading h2 {
+  margin: 25px;
+}
+
+/* Menu Bar */
+.menu-bar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 1px seashell;
+  flex-basis: 69px;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background-color: black;
+  flex-wrap: wrap;
+}
+
+.menu-bar img {
+  max-height: 50px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+}
+
+.nav li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav a {
+  color: seashell;
+}
+
+.nav a:hover {
+  text-decoration: none;
+}
+
+/* Main */
+
+main {
+  position: relative;
+  top: 69px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.hero {
+  height: 700px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/img-mission-background.jpg);
+  justify-content: center;
+  margin-bottom: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Tea of the Month */
+
+.teaOfTheMonth__teas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: wrap;
+  margin-bottom: 100px;
+  max-width: 1000px;
+}
+.tea-element img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+.tea-element {
+  margin-bottom: 25px;
+}
+
+/* Locations */
+
+.locations{
+  width: 100%;
+  min-height: 500px;
+  background-image: url(../images/img-locations-background.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.location-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.location-cards__element {
+  width: 300px;
+  margin: 15px 40px;
+  background-color: black;
+}
+.location-cards__element * {
+  margin: 25px 0;
+}
+
+/* Contact */
+
+.contact {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact h2 {
+  margin-bottom: 50px;
+}
+
+.contact h5 {
+  margin-bottom: 25px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100px;
+  align-items: center;
+}

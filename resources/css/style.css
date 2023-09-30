@@ -19,9 +19,11 @@ main {
     margin: 0 auto;
     width: 80%;
     background-color: white;    
-    height: 100vh;
     padding: 20px;
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 footer {
     background-color: white;
@@ -56,8 +58,17 @@ footer li {
 /* Status Bar */
 .status-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 20px;
+    align-items: center;
+}
+
+.status-bar__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;;
 }
 
 .status-bar ul {
@@ -95,11 +106,26 @@ footer li {
     margin-bottom: 25px;
 }
 
-/* Card */
+/* Projects */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
 .card-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    flex: 1 1 200px;
 }
 
 
@@ -114,7 +140,6 @@ footer li {
     flex-grow: 1;
     text-align: center;
     margin: 20px;
-    background-image: url("../imgs/StyleGuide.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -124,4 +149,12 @@ footer li {
     font-size: 24px;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card__style-guide {
+    background-image: url("../imgs/StyleGuide.jpg");
+}
+
+.card__tea-shop {
+    background-image: url("../imgs/teaShop.png");
 }
