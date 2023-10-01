@@ -10,7 +10,7 @@
 /* Global */
 
 body {
-    background-color: rgb(186, 230, 230);
+    background: url("../imgs/andras-vas-Bd7gNnWJBkU-unsplash.jpg") no-repeat center/cover fixed;
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
 }
@@ -140,21 +140,55 @@ footer li {
     flex-grow: 1;
     text-align: center;
     margin: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    border-radius: 15px;
-    color: rgb(186, 230, 230);
+    /* border-radius: 15px; */
+    color: #fafafa;
     font-weight: 700;
     font-size: 24px;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    background: transparent;
+    transition: all 0.4s;
 }
 
-.card__style-guide {
+/* .card__style-guide {
     background-image: url("../imgs/StyleGuide.jpg");
+} */
+
+.card__style-guide:before {
+    content: "";
+    width : 100%;
+    height: 100%;
+    background-image: url("../imgs/StyleGuide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    filter        : blur(1px);
+    -moz-filter   : blur(1px);
+    -webkit-filter: blur(1px);
+    -o-filter     : blur(1px);
+    -webkit-clip-path: inset(1);
+    clip-path: inset(1);
 }
 
-.card__tea-shop {
+.card__tea-shop:before {
+    content: "";
+    width : 100%;
+    height: 100%;
     background-image: url("../imgs/teaShop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    filter        : blur(1px);
+    -moz-filter   : blur(1px);
+    -webkit-filter: blur(1px);
+    -o-filter     : blur(1px);
+    -webkit-clip-path: inset(1);
+    clip-path: inset(1);
+}
+
+.card__link:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
