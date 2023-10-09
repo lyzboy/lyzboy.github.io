@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+/* colors
+#020F59
+#037F8C
+#038C8C
+#92A699
+#A63C24 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Share Tech', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #92A699;
+}
+
+.site {
+    width: 100vw;
+}
+
+.card {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    background-color: #92A699;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #037F8C;
+}
+
+.large-card {
+    flex-basis: 25rem;
+    min-height: 40rem;
+    min-width: 35rem;
+    max-width: 40rem;
+}
+
+.small-card {
+    max-width: 30rem;
+    min-width: 30rem;
+}
+
+.content {
+    background-color: black;
+    position: relative;
+    margin-left: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MISSION */
+header {
+    background: linear-gradient(#92A699aa, #037F8C), url("./imgs/hero.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+}
+
+/* NAV */
+nav {
+    left: 0;
+    top: 0;
+    background-color: #020F59;
+    position: fixed;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 250px;
+    z-index: 10;
+    box-shadow: 0 1rem 0.8rem black;
+}
+
+nav .logo {
+    flex: 1;
+    padding-top: 5rem;
+}
+
+nav ul {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav li, nav li:active, nav li:visited {
+    color: #92A699;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a, nav a:active, nav a:visited {
+    color: #92A699;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+
+    color: #A63C24;
+}
+
+nav li:hover {
+    transform: scale(1.8);
+    background-color: #92A699;
+    border-radius: 1rem;
+}
+
+/* Portfolio */
+
+.portfolio {
+    background-color: #037F8C;
+    padding: 5rem 0;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.image__container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: white;
+}
+.landscape-img {
+    width: 100%;
+    height: auto;
+}
+
+.portrait-img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-25%);
+}
+
+.portfolio__projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ABOUT US */
+
+.about-us {
+    background-color: #038C8C;
+    padding: 5rem 0;
+    box-shadow: 0 0rem 2rem black;
+}
