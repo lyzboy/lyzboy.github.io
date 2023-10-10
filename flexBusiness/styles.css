@@ -6,9 +6,9 @@
   --color-accent: #8aa6a3;
   /* This will allow for an opacity to happen in the hero */
   --color-accent-rgb: 138, 166, 163;
-  --color-black: #343d3c;
-  --color-white: #bfbfbf;
-  --color-white-rbg: 191, 191, 191;
+  --color-black: #2f3736;
+  --color-white: #e6e5e5;
+  --color-white-rbg: 230, 229, 229;
 }
 
 * {
@@ -47,14 +47,7 @@ main {
   padding: 1rem;
   border-radius: 1rem;
   color: var(--color-black);
-  box-shadow: 0 0.5rem 1rem black;
-}
-
-.large-card {
-  flex-basis: 25rem;
-  min-height: 40rem;
-  min-width: 35rem;
-  max-width: 40rem;
+  box-shadow: 0 0.5rem 1rem var(--color-black);
 }
 
 .small-card {
@@ -70,7 +63,7 @@ main {
   align-items: center;
 }
 .title {
-  padding-left: 5rem;
+  margin: 2rem 5rem;
   align-self: flex-start;
   font-size: 4rem;
 }
@@ -79,7 +72,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 5rem 0;
 }
+
 /* MISSION */
 header {
   background: linear-gradient(
@@ -95,10 +90,22 @@ header {
   padding: 10rem;
 }
 
+header h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px var(--color-black);
+}
+
+header p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px var(--color-black);
+}
+
 /* NAV */
 
 nav {
-  background-color: rgba(var(--color-white-rbg), 0.95);
+  background-color: rgba(var(--color-accent-rgb), 0.95);
 }
 
 nav .logo {
@@ -128,7 +135,7 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: #a63c24;
+  color: var(--color-main);
   font-size: 2rem;
   text-decoration: underline;
 }
@@ -136,15 +143,16 @@ nav a:hover {
 /* Portfolio */
 
 .portfolio {
-  background-color: var(--color-main);
+  background-color: var(--color-white);
   padding-bottom: 10rem;
+  color: var(--color-main);
 }
 
 .image__container {
   width: 100%;
   height: 250px;
   overflow: hidden;
-  background-color: white;
+  background-color: var(--color-white);
   margin-bottom: 2.5rem;
 }
 
@@ -168,12 +176,78 @@ nav a:hover {
   transform: scale(1.1) translateY(-5%);
 }
 
+.portfolio__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+}
+
+.portfolio__content {
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  flex-basis: 40%;
+  text-shadow: 1px 1px 2px var(--color-black);
+  color: var(--color-white);
+}
+
+.portfolio__content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+}
+
+.portfolio__content p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+}
+
+#smart-home {
+  background: linear-gradient(
+      rgba(var(--color-accent-rgb), 0.5),
+      var(--color-secondary)
+    ),
+    url("./imgs/smart_home.jpg") center/cover no-repeat;
+  flex-grow: 1;
+}
+#gadgets {
+  background: linear-gradient(
+      rgba(var(--color-accent-rgb), 0.5),
+      var(--color-secondary)
+    ),
+    url("./imgs/gadgets.jpg") center/cover no-repeat;
+  flex-grow: 3;
+}
+#software {
+  background: linear-gradient(
+      rgba(var(--color-accent-rgb), 0.5),
+      var(--color-secondary)
+    ),
+    url("./imgs/software_dev.jpg") center/cover no-repeat;
+  flex-grow: 1;
+}
+#ai {
+  background: linear-gradient(
+      rgba(var(--color-accent-rgb), 0.5),
+      var(--color-secondary)
+    ),
+    url("./imgs/ai.jpg") center/cover no-repeat;
+  flex-grow: 3;
+}
+
 /* ABOUT US */
 
 .about-us {
   background-color: var(--color-secondary);
-  padding: 5rem 0;
-  box-shadow: 0 0rem 2rem black;
+
+  box-shadow: 0 0rem 2rem var(--color-black);
 }
 
 /* footer */
@@ -196,10 +270,10 @@ footer {
     height: 100vh;
     min-width: 250px;
     z-index: 10;
-    box-shadow: 0 1rem 0.8rem black;
+    box-shadow: 0 1rem 0.8rem var(--color-black);
   }
   .content {
-    background-color: black;
+    background-color: var(--color-black);
     position: relative;
     margin-left: 250px;
     text-align: center;
@@ -222,7 +296,7 @@ footer {
     height: 7.5rem;
     align-items: center;
     z-index: 10;
-    box-shadow: 5px 0 5px black;
+    box-shadow: 5px 0 5px var(--color-black);
   }
 
   nav li {
@@ -239,7 +313,7 @@ footer {
     padding: 0 5rem;
   }
   .content {
-    background-color: black;
+    background-color: var(--color-black);
     position: static;
     text-align: center;
     display: flex;
@@ -252,5 +326,9 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     text-decoration: none;
+  }
+
+  .portfolio__content {
+    flex-basis: 51%;
   }
 }
