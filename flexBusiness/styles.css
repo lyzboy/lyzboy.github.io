@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
 
-/* colors
-#020F59
-#037F8C
-#038C8C
-#92A699
-#A63C24 */
+:root {
+  --color-main: #127369;
+  --color-secondary: #10403b;
+  --color-accent: #8aa6a3;
+  /* This will allow for an opacity to happen in the hero */
+  --color-accent-rgb: 138, 166, 163;
+  --color-black: #343d3c;
+  --color-white: #bfbfbf;
+  --color-white-rbg: 191, 191, 191;
+}
 
 * {
   margin: 0;
@@ -23,7 +27,12 @@ body {
   font-family: "Share Tech", Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: White;
+  color: var(--color-white);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 .site {
@@ -33,11 +42,12 @@ body {
 .card {
   flex-grow: 1;
   flex-shrink: 1;
-  background-color: #92a699;
+  background-color: var(--color-accent);
   margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
-  color: #020f59;
+  color: var(--color-black);
+  box-shadow: 0 0.5rem 1rem black;
 }
 
 .large-card {
@@ -52,9 +62,30 @@ body {
   min-width: 30rem;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.title {
+  padding-left: 5rem;
+  align-self: flex-start;
+  font-size: 4rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* MISSION */
 header {
-  background: linear-gradient(#92a699aa, #037f8c),
+  background: linear-gradient(
+      rgba(var(--color-accent-rgb), 0.2),
+      var(--color-main)
+    ),
     url("./imgs/hero.jpg") no-repeat center center/cover;
   height: 100vh;
   display: flex;
@@ -66,10 +97,14 @@ header {
 
 /* NAV */
 
+nav {
+  background-color: rgba(var(--color-white-rbg), 0.95);
+}
+
 nav .logo {
   flex: 1;
   padding-top: 5rem;
-  color: #020f59;
+  color: var(--color-black);
 }
 
 nav ul {
@@ -81,13 +116,14 @@ nav ul {
 
 nav a {
   text-decoration: none;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
 nav a,
 nav a:active,
 nav a:visited {
-  color: #020f59;
+  color: var(--color-black);
   transition: all 0.3s ease-in-out;
 }
 
@@ -100,13 +136,8 @@ nav a:hover {
 /* Portfolio */
 
 .portfolio {
-  background-color: #037f8c;
-  padding: 5rem 0;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
+  background-color: var(--color-main);
+  padding-bottom: 10rem;
 }
 
 .image__container {
@@ -116,9 +147,10 @@ main {
   background-color: white;
   margin-bottom: 2.5rem;
 }
+
 .landscape-img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 110%;
 }
 
 .portrait-img {
@@ -127,27 +159,35 @@ main {
   transform: translateY(-25%);
 }
 
-.portfolio__projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+.portrait {
+  transform: translateY(-5%);
+  transition: all 0.3s ease-in-out;
+}
+
+.portrait:hover {
+  transform: scale(1.1) translateY(-5%);
 }
 
 /* ABOUT US */
 
 .about-us {
-  background-color: #038c8c;
+  background-color: var(--color-secondary);
   padding: 5rem 0;
   box-shadow: 0 0rem 2rem black;
 }
 
-@media screen and (min-width: 769px) {
+/* footer */
+footer {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 769px) {
   nav {
     left: 0;
     top: 0;
-    background-color: #92a699;
     position: fixed;
     flex: 1;
     text-align: center;
@@ -167,7 +207,7 @@ main {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .site {
     display: flex;
     flex-direction: column;
@@ -177,7 +217,6 @@ main {
     display: flex;
     flex-direction: row;
     position: fixed;
-    background-color: #92a699;
     justify-content: space-between;
     width: 100%;
     height: 7.5rem;
