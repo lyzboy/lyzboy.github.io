@@ -8,26 +8,41 @@
   --color-light: #fff;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Goudy+Bookletter+1911&family=Grenze+Gotisch:wght@400;700&display=swap");
+
 /* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
 }
 
 body {
   font-size: 62.5%;
 }
 
+h1 {
+  font-family: "Grenze Gotisch", serif;
+  font-weight: 700;
+}
+
 h2 {
   font-size: 3rem;
   text-align: center;
   color: var(--color-secondary);
+  font-family: "Berkshire Swash", cursive;
+  margin: 1.5rem;
 }
 
 p {
   font-size: 1.3rem;
   text-align: center;
+}
+
+.article {
+  padding: 2rem 5rem;
 }
 
 /* NAV */
@@ -38,7 +53,11 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
-  background-color: var(--color-primary);
+  background: linear-gradient(
+    90deg,
+    var(--color-tertiary),
+    var(--color-primary)
+  );
 }
 
 nav img {
@@ -67,16 +86,19 @@ nav a {
   text-decoration: none;
   color: var(--color-light);
   transition: color 0.3s ease-in-out;
+  font-family: "Berkshire Swash", cursive;
 }
 
 nav ul:last-child {
   padding-right: 2.5rem;
 }
 
+/* HEADER */
+
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 35rem;
+  grid-auto-rows: 40rem;
 }
 
 .hero {
@@ -116,8 +138,7 @@ header {
 
 /* MAIN */
 .atmosphere {
-  margin: 2.5rem 0;
-  padding: 5rem;
+  margin: 2rem 0;
 }
 
 .atmosphere p {
@@ -166,6 +187,71 @@ header {
   height: auto;
   position: relative;
   top: -25%;
+}
+
+/* LOCATION */
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.location h2 {
+  color: var(--color-light);
+}
+
+.location__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#location__map {
+  box-shadow: 1rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  border: solid 1rem var(--color-primary);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    var(--color-tertiary),
+    var(--color-primary)
+  );
+  padding: 2rem;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot__grid__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3 {
+  font-size: 2rem;
+  color: var(--color-light);
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 1000px) {
