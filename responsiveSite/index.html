@@ -24,11 +24,12 @@
   </nav>
   <header>
     <div class="hero">
-      <!-- <img src="./resources/svgs/DicesLogo.svg" alt="Dices Logo"> -->
+      <img src="./resources/svgs/DicesLogo.svg" alt="Dices Logo">
     </div>
     <div class="hero__description">
       <h1>Dices D&D Club</h1>
       <p>Dices is your gateway to a world of adventure, where epic tales and daring quests await. As passionate gamers, we've united to form a tight-knit community of adventurers, storytellers, and creative minds.</p>
+      <a href="#">Sign Up</a>
     </div>
   </header>
   <main>
@@ -59,11 +60,28 @@
     </div>
     <div class="gameNights article">
       <h2>Game Nights</h2>
-      <p>Game nights are held every Friday at 6:00 PM. We play a variety of games, including Dungeons & Dragons, Pathfinder, and more. We also have a variety of board games available to play. If you're interested in joining us, please contact us for more information.</p>
+      <p>Game nights are held every Tuesday at 6:00 PM and Saturday at 12:00 PM. We play a variety of games, including Dungeons & Dragons, Pathfinder, and more. We also have a variety of board games available to play. If you're interested in joining us, please contact us for more information.</p>
     </div>
     <div class="dms article">
       <h2>Dungeon Masters</h2>
       <p>We are always looking for new Dungeon Masters to join our club. If you are interested in becoming a Dungeon Master, please contact us for more information.</p>
+      <div class="dms__gallery">
+        <div class="dms__img-container">
+          <img class="dms__portrait" src="./resources/imgs/man1.jpg" alt="">
+        </div>
+        <div class="dms__img-container">
+          <img class="dms__landscape" src="./resources/imgs/woman1.jpg" alt="">
+        </div>
+        <div class="dms__img-container">
+          <img class="dms__portrait" src="./resources/imgs/man2.jpg" alt="">
+        </div>
+        <div class="dms__img-container">
+          <img class="dms__landscape" src="./resources/imgs/man3.jpg" alt="">
+        </div>
+        <div class="dms__img-container">
+          <img class="dms__portrait" src="./resources/imgs/man4.jpg" alt="">
+        </div>
+      </div>
     </div>
     <div class="location article">
       <h2>Location</h2>
@@ -76,13 +94,18 @@
     </div>
   </main>
   <footer>
-    <div class="footer__grid">
       <div class="footer__grid__item">
-        <h3>Hours</h3>
-        <p>Monday - Friday: 6:00 PM - 10:00 PM</p>
+        <h3>Play Times</h3>
+        <p>Tuesday: 6:00 PM - 10:00 PM</p>
         <p>Saturday: 12:00 PM - 10:00 PM</p>
-        <p>Sunday: Closed</p>
       </div>
+      <form class="footer__grid__item" onsubmit="return false;">
+        <p>Sign up for our newsletter to stay up to date with all of our play times and news about what is happening in the Dices World!</p>
+        <div class="signUp">
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
       <div class="footer__grid__item">
         <h3>Contact</h3>
         <p>Phone: (123) 456-7890</p>
@@ -93,8 +116,6 @@
         <p>123 Main Street</p>
         <p>Anytown, USA</p>
       </div>
-    </div>
-
   </footer>
 </body>
 
