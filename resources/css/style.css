@@ -155,28 +155,11 @@ footer li {
     background-image: url("../imgs/StyleGuide.jpg");
 } */
 
-.card__style-guide:before {
+.card__responsive-site:before {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("../imgs/StyleGuide.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-
-  filter: blur(1px);
-  -moz-filter: blur(1px);
-  -webkit-filter: blur(1px);
-  -o-filter: blur(1px);
-  -webkit-clip-path: inset(1);
-  clip-path: inset(1);
-}
-
-.card__tea-shop:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url("../imgs/teaShop.jpg");
+  background-image: url("../imgs/dices.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
