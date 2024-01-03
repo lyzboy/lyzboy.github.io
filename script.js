@@ -105,7 +105,7 @@ const accolades = [
             "I have received my Bachelor of Science in Information Technology with a focus in Software Systems Engineering. I graduated with honors and a 3.98 GPA. Within this degree field I studied a wide variety of topics including: Software Development, Web Development, Database Management, Project Management, Networking, and Security.",
         completionDate: "2015",
         institution: "Colorado Technical University",
-        imgPath: "/imgs/Jsanford_BSIT.jpg",
+        imgPath: "/imgs/JSanford_BSIT.jpg",
     },
     {
         id: "mechanical",
