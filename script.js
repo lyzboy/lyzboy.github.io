@@ -91,7 +91,7 @@ const designProjects = [
     {
         title: "Marketing and Design",
         description:
-            "Follow the link to view multiple market and design projects that I have worked on for a previous employer. All marketing ``projects from this page where created using Photoshop, Illustrator. The technical documents were created using Microsoft Word.",
+            "Follow the link to view multiple market and design projects that I have worked on for a previous employer. All marketing projects from this page where created using Photoshop, Illustrator. The technical documents were created using Microsoft Word. All videos where made using a combination of Blender, Adobe Premiere Pro and Adobe After Effects. To view all marketing videos that I have created for this company, visit their <a href='https://www.youtube.com/@whpowersolutions9080'>youtube page</a> ,
         imgPath: "",
         link: "https://whpowersolutions.com/media/",
     },
