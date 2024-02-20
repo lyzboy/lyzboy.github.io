@@ -13,6 +13,13 @@ const colors = ["#116466", "#ffcb9a", "#d1e8e2"];
 
 const webDevProjects = [
     {
+        title: "Jammmin",
+        description:
+            "Jammin is an elegantly designed static web application developed using React and leveraging the Spotify API. This application provides users with the capability to search for songs and compile personalized playlists. These playlists can then be seamlessly saved directly to the users' Spotify accounts. To ensure a secure and user-friendly experience, the site employs Implicit Grant Authorization for authentication purposes.",
+        imgPath: "/imgs/Jammmin.png",
+        link: "spotimix.netlify.app",
+    },
+    {
         title: "Internal Inventory System",
         description:
             "This is an internal inventory system that I created for a previous employer. This system was created using HTML, CSS, JavaScript, MySql, Python, and PHP. This system was created to allow the company to track inventory and pulled from the shelf. It utilized tablets that could scan QR codes and then upload that information to the server. The user was able to create job numbers that the parts could be assigned to upon upload. It also utilize a unique system from printing QR code and part information to a label sheet for placement on the inventory shelf.",
