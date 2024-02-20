@@ -17,7 +17,7 @@ const webDevProjects = [
         description:
             "Jammin is an elegantly designed static web application developed using React and leveraging the Spotify API. This application provides users with the capability to search for songs and compile personalized playlists. These playlists can then be seamlessly saved directly to the users' Spotify accounts. To ensure a secure and user-friendly experience, the site employs Implicit Grant Authorization for authentication purposes.",
         imgPath: "/imgs/Jammmin.png",
-        link: "spotimix.netlify.app",
+        link: "https://spotimix.netlify.app",
     },
     {
         title: "Internal Inventory System",
