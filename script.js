@@ -23,7 +23,7 @@ const webDevProjects = [
         title: "Weather App",
         description:
             "Weather app is a simple web app that allows a user to find the weather for a selected location. It provides the current weather as well as a 5 day forecast. It was built using React and the Open Weather API. It is deployed using Netlify.",
-        imgPath: "/imgs/WeatherApp.png",
+        imgPath: "/imgs/WeatherApp.jpg",
         link: "https://lyzweather.netlify.app/",
     },
     {
