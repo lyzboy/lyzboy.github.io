@@ -20,6 +20,13 @@ const webDevProjects = [
         link: "https://spotimix.netlify.app",
     },
     {
+        title: "Weather App",
+        description:
+            "Weather app is a simple web app that allows a user to find the weather for a selected location. It provides the current weather as well as a 5 day forecast. It was built using React and the Open Weather API. It is deployed using Netlify.",
+        imgPath: "/imgs/WeatherApp.png",
+        link: "https://lyzweather.netlify.app/",
+    },
+    {
         title: "Internal Inventory System",
         description:
             "This is an internal inventory system that I created for a previous employer. This system was created using HTML, CSS, JavaScript, MySql, Python, and PHP. This system was created to allow the company to track inventory and pulled from the shelf. It utilized tablets that could scan QR codes and then upload that information to the server. The user was able to create job numbers that the parts could be assigned to upon upload. It also utilize a unique system from printing QR code and part information to a label sheet for placement on the inventory shelf.",
